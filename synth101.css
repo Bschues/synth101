@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+header {
+    display: flex;
+    background-color: aquamarine;
+    justify-content: center;
+    width: 100%;
+}
+#headerinfo {
+    
+    background-color: blueviolet;
+}
+#synthphotos {
+    display: flex;
+    flex-flow: column wrap;
+    background-color: darkseagreen;
+    width: 100%;
+    height: 1000px;
+    justify-content: center;
+    overflow: scroll;
+}
+  @media screen and (min-width: 320px) {
+      #synthphotos {
+          flex-direction: row;
+      }
+  @media screen and (min-width: 510px) {
+      header {
+          flex-direction: row;
+          flex-wrap: wrap;
+          height: 50%;
+          width: 50%;
+      }
+      body {
+      background-color: dodgerblue;
+        flex-direction: row;
+      }
+      
+
+      #synthphotos {
+          background-color: dodgerblue;
+          flex-flow: row wrap;
+          flex-direction: row;
+          align-items: center;
+      }
+      #synth {
+          border: solid 2px greenyellow;
+      }
+  }
+  }
